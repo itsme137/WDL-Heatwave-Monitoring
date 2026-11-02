@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Heatwave Advisory Subscription</title>
+</head>
+<body>
+ <header><h1>Heatwave Advisory Subscription</h1></header>
+ <nav><a href="index.html">Home</a> | <a href="alert-details.html">Alert</a> | <a href="about-system.html">About</a> | <a href="sources.html">Sources</a> | <a href="navigation.html">Navigation</a> | <a href="hotspot-map.html">Hotspot Map</a> | <a href="forecast.html">Forecast</a> | <a href="subscribe.html">Subscribe</a> | <a href="media.html">Media</a></nav><hr>
+ <main>
+  <form action="#" method="post">
+    <fieldset>
+     <legend>Citizen Details</legend>
+     <p><label for="name">Name:</label> <input type="text" id="name" name="name" required></p>
+     <p><label for="email">Email:</label> <input type="email" id="email" name="email" required></p>
+     <p><label for="mobile">Mobile Number:</label> <input type="tel" id="mobile" name="mobile" pattern="[0-9]{10}" maxlength="10" placeholder="10-digit number" required></p>
+     <p><label for="region">Region:</label>
+       <select id="region" name="region" required>
+        <option value="">-- Select Region --</option>
+        <option value="north">North Zone</option>
+        <option value="central">Central Zone</option>
+        <option value="south">South Zone</option>
+       </select>
+     </p>
+    </fieldset>
+    <fieldset>
+     <legend>Preferred Alert Language</legend>
+     <label><input type="radio" name="lang" value="en" checked> English</label>
+     <label><input type="radio" name="lang" value="hi"> Hindi</label>
+     <label><input type="radio" name="lang" value="mr"> Marathi</label>
+    </fieldset>
+    <fieldset>
+     <legend>Alert Types</legend>
+     <label><input type="checkbox" name="alerts" value="sms"> SMS</label>
+     <label><input type="checkbox" name="alerts" value="email"> Email</label>
+     <label><input type="checkbox" name="alerts" value="severe"> Severe Heatwave Only</label>
+    </fieldset>
+    <p><input type="submit" value="Subscribe"> <input type="reset" value="Reset"></p>
+   </form>
+ </main>
+ <footer><hr><p><small>&copy; 2026 KJSCES-01 Heatwave Intelligence System | K. J. Somaiya School of Engineering, Mumbai-77</small></p></footer>
+</body>
+</html>

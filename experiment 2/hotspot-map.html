@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Regional Hotspot Map | Heatwave Intelligence System</title>
+ <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+ <header class="site-header">
+  <div class="logo"> Heatwave Intelligence System</div>
+  <nav class="main-nav" aria-label="Primary navigation">
+   <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="alert-details.html">Alert Bulletin</a></li>
+    <li><a href="about-system.html">About</a></li>
+    <li><a href="sources.html">Data &amp; Stakeholders</a></li>
+    <li><a href="navigation.html">Navigation</a></li>
+    <li><a href="hotspot-map.html">Hotspot Map</a></li>
+    <li><a href="forecast.html">Forecast</a></li>
+    <li><a href="subscribe.html">Subscribe</a></li>
+    <li><a href="media.html">Media</a></li>
+   </ul>
+  </nav>
+ </header>
+ <main>
+  <h1>Regional Heatwave Hotspot Map</h1>
+  <p>Click on a coloured zone below to view region-specific heatwave details.</p>
+
+  <section class="card">
+   <img src="hotspot-map.svg" usemap="#regionmap" width="640" height="420"
+      alt="Regional heatwave hotspot map showing North Zone and Central Zone">
+
+   <map name="regionmap">
+    <area shape="rect" coords="60,60,290,210" href="region-north.html"
+        alt="Region A - North Zone" title="North Zone: Severe Heatwave">
+    <area shape="rect" coords="350,220,580,370" href="region-central.html"
+        alt="Region B - Central Zone" title="Central Zone: Moderate Heatwave">
+   </map>
+  </section>
+
+  <section class="card">
+   <h2>Zone Legend</h2>
+   <ul>
+    <li><strong>Region A — North Zone:</strong> Severe heatwave (47°C)</li>
+    <li><strong>Region B — Central Zone:</strong> Moderate heatwave (42°C)</li>
+   </ul>
+  </section>
+ </main>
+
+ <footer class="site-footer">
+  <p>&copy; 2026 Heatwave Intelligence System · KJSCES-01</p>
+ </footer>
+
+</body>
+</html>

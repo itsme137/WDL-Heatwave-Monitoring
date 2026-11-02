@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Advisory Subscription | Heatwave Intelligence System</title>
+ <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+ <header class="site-header">
+  <div class="logo"> Heatwave Intelligence System</div>
+  <nav class="main-nav" aria-label="Primary navigation">
+   <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="alert-details.html">Alert Bulletin</a></li>
+    <li><a href="about-system.html">About</a></li>
+    <li><a href="sources.html">Data &amp; Stakeholders</a></li>
+    <li><a href="navigation.html">Navigation</a></li>
+    <li><a href="hotspot-map.html">Hotspot Map</a></li>
+    <li><a href="forecast.html">Forecast</a></li>
+    <li><a href="subscribe.html">Subscribe</a></li>
+    <li><a href="media.html">Media</a></li>
+   </ul>
+  </nav>
+ </header>
+
+ <main>
+  <h1>Heatwave Advisory Subscription</h1>
+
+  <section class="card">
+   <form action="#" method="post">
+
+     <label for="cname">Full Name</label>
+     <input type="text" id="cname" name="citizen_name" placeholder="Enter your full name" required>
+
+     <label for="cemail">Email Address</label>
+     <input type="email" id="cemail" name="citizen_email" placeholder="you@example.com" required>
+
+    <label for="cmobile">Mobile Number</label>
+    <input type="tel" id="cmobile" name="citizen_mobile" pattern="[0-9]{10}"
+        placeholder="10-digit mobile number" required>
+
+    <label for="region">Region</label>
+    <select id="region" name="region" required>
+     <option value="">-- Select your region --</option>
+     <option value="north">North Zone</option>
+     <option value="central">Central Zone</option>
+     <option value="coastal">Coastal Zone</option>
+     <option value="ghats">Western Ghats Zone</option>
+    </select>
+
+    <fieldset>
+     <legend>Preferred Alert Language</legend>
+     <label><input type="radio" name="language" value="english" checked> English</label>
+     <label><input type="radio" name="language" value="hindi"> Hindi</label>
+     <label><input type="radio" name="language" value="marathi"> Marathi</label>
+    </fieldset>
+
+    <fieldset>
+     <legend>Alert Types to Receive</legend>
+     <label><input type="checkbox" name="alert_type" value="sms"> SMS Alerts</label>
+     <label><input type="checkbox" name="alert_type" value="email"> Email Alerts</label>
+     <label><input type="checkbox" name="alert_type" value="push"> Push Notifications</label>
+    </fieldset>
+
+    <div class="btn-row">
+      <button type="submit">Submit</button>
+      <button type="reset">Reset</button>
+    </div>
+   </form>
+  </section>
+ </main>
+
+ <footer class="site-footer">
+  <p>&copy; 2026 Heatwave Intelligence System · KJSCES-01</p>
+ </footer>
+
+</body>
+</html>
